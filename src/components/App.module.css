@@ -1,0 +1,63 @@
+/* src/components/App.module.css */
+/* Background container with relative positioning */
+.backgroundContainer {
+  min-height: 100vh; /* Ensure the container covers the viewport height */
+  position: relative; /* Allow positioning of child elements */
+  overflow: hidden; /* Prevent scrolling issues */
+}
+
+/* Default background color for all pages except the homepage */
+.regularBackground {
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-color: #202529; /* Default background color */
+  z-index: -2; /* Ensure it sits below the homepage background and overlay */
+}
+
+/* Style for the background image on the homepage */
+.homepageBackground {
+  position: fixed; /* Keep background image fixed */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-image: url('../assets/background-home.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1; /* Ensure background is behind other content */
+}
+
+/* Overlay to dim the background on the homepage */
+.overlay {
+  position: fixed; /* Overlay covers the whole viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: -1; /* Ensure it sits between the background and content */
+}
+
+/* Main container for the entire app */
+.pageContainer {
+  display: flex;
+  flex-direction: column; /* Stack header, content, and footer vertically */
+  max-width: 960px; /* Max width of content */
+  min-height: 100vh; /* Ensure container spans the full viewport height */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 0 16px; /* Padding on left and right */
+  position: relative; /* Position relative to ensure overlay sits below */
+}
+
+/* Container for routing content */
+.contentContainer {
+  flex: 1; /* Allow this element to grow and fill available space */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center content horizontally */
+}

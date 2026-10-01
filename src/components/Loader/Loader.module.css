@@ -1,0 +1,7 @@
+.loaderContainer {
+  flex: 1; /* Allow this element to grow and fill available space */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}

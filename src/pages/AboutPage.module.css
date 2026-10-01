@@ -1,0 +1,47 @@
+/* AboutPage.module.css */
+.mainContent {
+  pointer-events: none;
+}
+
+h2 {
+  font-family: Poppins, Sans-Serif;
+  font-weight: 700; 
+  font-size: 42px;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  color: #3b9b8c;
+}
+
+h3 {
+  color: #3b9b8c;
+}
+
+.contentImg {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the ul element */
+.list {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 20px; /* Adjust the gap between items as needed */
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Removes default bullet points */
+}
+
+/* Style for each li element */
+.list li {
+  flex: 1 1 calc(33.333% - 20px); /* 3 items per row, accounting for the gap */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+/* Ensures that on smaller screens or containers, items will take full width */
+@media (max-width: 768px) {
+  .list li {
+    flex: 1 1 100%; /* 1 item per row on small screens */
+  }
+}

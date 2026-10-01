@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center; /* Center items horizontally within the footer */
+  align-items: center; /* Center items vertically within the footer */
+  padding: 8px 16px; /* Consistent padding for spacing */
+  margin-top: auto; /* Push footer to the bottom of the container */
+  width: 100%; /* Ensure the footer spans the full width */
+  text-align: center; /* Center text horizontally */
+  position: relative; /* Keep footer in its normal document flow */
+}
+
+.footerText {
+  display: flex;
+  align-items: center; /* Center items vertically within .footerText */
+  justify-content: center; /* Center items horizontally within .footerText */
+  gap: 12px; /* Space between items */
+}

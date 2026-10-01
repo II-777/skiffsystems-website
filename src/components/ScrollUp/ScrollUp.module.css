@@ -1,0 +1,38 @@
+.scrollUp {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 55px; /* Size of the button */
+  height: 55px; /* Size of the button */
+  background-color: #3b9b8c; /* Base color */
+  border: none; /* No borders */
+  border-radius: 50%; /* Makes the button round */
+  display: flex; /* Use flexbox to center the icon */
+  align-items: center; /* Center the icon vertically */
+  justify-content: center; /* Center the icon horizontally */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.scrollUp:hover {
+  background-color: #4bd3c3; /* Hover color */
+}
+
+.scrollUp:active {
+  background-color: red;
+}
+
+.visuallyHiddenScroll {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrollIcon {
+  color: white; /* Color of the icon inside the button */
+}

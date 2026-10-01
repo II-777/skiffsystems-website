@@ -1,0 +1,80 @@
+/* ContactPage.module.css */
+
+h2 {
+  padding-top: 24px;
+  color: #4bd3c3;
+}
+
+.contactText {
+  text-align: center;
+}
+
+.mapContainer {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.mapFrame {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.emailLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.emailLink:hover {
+  color: #4bd3c3; /* Hover color */
+}
+
+.emailIcon {
+  font-size: 24px; /* Adjust size as needed */
+  margin-right: 8px;
+  transition: color 0.3s ease;
+  color: #4bd3c3; /* Hover color */
+}
+
+.emailLink:hover .emailIcon {
+  color: #4bd3c3; /* Icon color on hover */
+}
+
+.emailLink:active {
+  color: red;
+}
+
+.socialLinksContainer {
+  margin-top: 20px;
+}
+
+.socialLinksList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 52px; /* Space between icons */
+}
+
+.socialLinksListItem {
+  display: inline;
+}
+
+.socialIcon {
+  font-size: 32px; /* Adjust size as needed */
+  transition: color 0.3s ease;
+}
+
+.socialLinksListItem a:hover .socialIcon {
+  color: #4bd3c3; /* Color on hover */
+}
+
+.socialLinksListItem a:active .socialIcon {
+  color: red;
+}
